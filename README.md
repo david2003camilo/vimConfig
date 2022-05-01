@@ -1,1 +1,4 @@
 # vimConfig
+
+
+This config personal 
