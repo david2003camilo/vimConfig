@@ -35,6 +35,7 @@ call plug#end()
 
 "-------------------source----------------
 source ~/.config/nvim/themes/onedark.vim
+source ~/.config/nvim/autoload/coc-config.vim
 "------------------config-plugins---------
 let mapleader=" "
 let g:coc_node_path = trim(system('which node'))
@@ -45,7 +46,7 @@ let g:coc_node_path = trim(system('which node'))
 
 " enable tabline
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_sep = ''
 let g:airline#extensions#tabline#left_alt_sep = ''
 let g:airline#extensions#tabline#right_sep = ''
 let g:airline#extensions#tabline#right_alt_sep = ''
@@ -78,14 +79,14 @@ nnoremap <silent> <TAB> :bnext<CR>
 nnoremap <silent> <S-TAB> :bprevious<CR>
 "close buffer
 "cerrar buffer
-nmap <leader>bd :bdelete<CR>
+nmap cw :bdelete<CR>
 
-nnoremap <Leader>n :NERDTreeFind<CR>
+nnoremap <Leader>l :NERDTreeFind<CR>
 nmap <leader>fs :FZF<CR>
 nmap <leader>rg :Rg<CR>
 nmap <leader>gs :CocSearch
 
-nmap <Leader>s :w<CR>
+nmap <Leader>w :w<CR>
 nmap <leader>q :q<CR>
 
 " config Link:https://vimcolorschemes.com/
